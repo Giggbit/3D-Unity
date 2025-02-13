@@ -741,6 +741,10 @@
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy\Lib\Editor\log4netPlastic.dll</HintPath>
       <Private>False</Private>
@@ -1391,6 +1395,10 @@
       <Project>{D91B6A68-CC51-EEDF-EECD-A582294ED2E9}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Components.csproj">
+      <Project>{587BBBD9-3EF7-EBDB-E0C3-0DA0E9A9AF70}</Project>
+      <Name>Unity.Services.Core.Components</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Editor.csproj">
       <Project>{546FCC2C-381C-6D8B-E6B6-4B7DAD5BBD36}</Project>
       <Name>Unity.Mathematics.Editor</Name>
@@ -1399,9 +1407,17 @@
       <Project>{3B501CEF-067F-B97A-D5BE-2256A865ABE2}</Project>
       <Name>Unity.Performance.Profile-Analyzer.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Services.Authentication.PlayerAccounts.csproj">
+      <Project>{B2BEE8E3-FCCF-A907-6308-AD32121FE1F6}</Project>
+      <Name>Unity.Services.Authentication.PlayerAccounts</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Collections.csproj">
       <Project>{B7BC0C94-DE89-FA99-96BB-1EA80F988FA5}</Project>
       <Name>Unity.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Authentication.Editor.Shared.csproj">
+      <Project>{5C578BBF-4D25-5FE7-0339-AA1DA13F925E}</Project>
+      <Name>Unity.Services.Authentication.Editor.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
       <Project>{F718E335-6AAA-C941-FFD7-657246BEB012}</Project>
@@ -1435,6 +1451,10 @@
       <Project>{DE63C7FA-80B8-DB7F-E94C-BA0E451813F2}</Project>
       <Name>Unity.VisualScripting.Flow.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
+      <Project>{8FDF319B-B68A-8E22-C7EA-EC61413F3A65}</Project>
+      <Name>Unity.Services.Core.Analytics</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
       <Project>{1C9AF978-C62A-1EAE-5ADE-70846941A314}</Project>
       <Name>Unity.EditorCoroutines.Editor</Name>
@@ -1455,6 +1475,10 @@
       <Project>{9E44B14B-2459-0578-8F25-B879A3343454}</Project>
       <Name>Cinemachine</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Services.Authentication.csproj">
+      <Project>{8EB92CB1-017F-B5DE-12FB-A64C707D51A5}</Project>
+      <Name>Unity.Services.Authentication</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
       <Project>{F3E1D955-3AEC-9B08-AE6D-867DCA9DF752}</Project>
       <Name>Unity.Mathematics</Name>
@@ -1462,6 +1486,10 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{D9EBFB72-5975-0825-D3CD-8D7E30A025A5}</Project>
       <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.Environments.csproj">
+      <Project>{604F8C01-CDA1-8965-857C-96F4A6F5499B}</Project>
+      <Name>Unity.Services.Core.Environments</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
       <Project>{065C90A2-D456-4F70-D470-B042FA89EEEC}</Project>
@@ -1474,6 +1502,10 @@
     <ProjectReference Include="Unity.Burst.Editor.csproj">
       <Project>{4D3A783A-D5D8-27C8-58DB-ACED6840C5DC}</Project>
       <Name>Unity.Burst.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Core.csproj">
+      <Project>{65F16392-679C-5B53-9435-F12308680A68}</Project>
+      <Name>Unity.Services.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.csproj">
       <Project>{768BBF1D-EC13-B258-0C08-0F6608410401}</Project>
