@@ -10,5 +10,6 @@ public class GameState : MonoBehaviour
     public static float lookSensitivityX { get; set; } = 10.0f;
     public static float lookSensitivityY { get; set; } = -6.0f;
 
+    public static float gameTimeHour { get; set; } = 12.0f;
 
 }

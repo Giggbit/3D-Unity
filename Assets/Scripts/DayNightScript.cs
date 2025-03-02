@@ -2,9 +2,9 @@
 
 public class DayNightScript : MonoBehaviour
 {
-    private float dayDuration = 10.0f;
+    private float dayDuration = 1000.0f;
     private float hour;
-    private float dawnTime = 4.0f; // 
+    private float dawnTime = 4.0f;
     private Material skybox;
     private Light sun;
     private Light moon;
@@ -22,8 +22,9 @@ public class DayNightScript : MonoBehaviour
         if(hour >= 24.0f) {
             hour -= 24.0f;
         }
-        float coef;
+        GameState.gameTimeHour = hour;
 
+        float coef;
         if(hour >= dawnTime && hour < 24.0f - dawnTime) { // дневная фаза
             coef = Mathf.Sin((hour - dawnTime) * Mathf.PI / (24.0f - 2.0f * dawnTime));
             sun.intensity = coef;
